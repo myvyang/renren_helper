@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+#main {
+    width:480px;
+}
+
+#KeyWord {
+    width:220px;
+    height:240px;
+    float:right;
+    border: 1px solid #e9e9e9;
+    padding:5px;
+}
+
+#ChooseDiv {
+    width:220px;
+    height:240px;
+    float:left;
+    border: 1px solid #e9e9e9;
+    padding:5px;
+}
+
+#MoreUse {
+    width:468px;
+    height:140px;
+    float:left;
+    border: 1px solid #e9e9e9;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+#UseSet {
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:5px;
+    height:100px;
+    width:458px;
+    display: inline-block;
+    background: #f4f4f4;
+    border: 1px solid #e9e9e9;
+}
+
+#WordSet {
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:5px;
+    height:130px;
+    width:201px;
+    display: inline-block;
+    background: #f4f4f4;
+    border: 1px solid #e9e9e9;
+}
+
+#ChooseSet {
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:5px;
+    height:190px;
+    width:201px;
+    display: inline-block;
+    background: #f4f4f4;
+    border: 1px solid #e9e9e9;
+}
+
+#WordSet .tag {
+    background: #E7F3F9;
+    padding: 1px 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+    float: left;
+}
+
+#WordSet .tag:hover {
+    background: #85c926;
+}
+
+#ChooseSet .tag {
+    background: #E7F3F9;
+    padding: 1px 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+    float: left;
+}
+
+#ChooseSet .tag:hover {
+    background: #85c926;
+}
+
+#UseSet .tag {
+    background: #E7F3F9;
+    padding: 1px 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+    float: left;
+}
+
+.UseSetTag {
+    width:458px;
+    height:25px;
+    margin-bottom:10px;
+}
+
+#ZanNote {
+    background: #85c926;
+    padding: 1px 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 5px 5px 5px;
+    display: inline-block;
+}
+
+.btn {
+    color: #FFF;
+    width: 50px;
+    height: 25px;
+    background-color: #85c926;
+    border: 0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei","WenQuanYi Micro Hei",SimHei,tohoma,sans-serif;
+}
+
+.btn:hover {
+    background-color: #50a200;
+}
+
+#MoreUse .title {
+    text-align:center;
+    margin-bottom:2px;
+}
+
+#KeyWord .title {
+    text-align:center;
+    margin-bottom:2px;
+}
+
+#ChooseDiv .title {
+    text-align:center;
+    margin-bottom:2px;
+}
+
+.info {
+    height:30px;
+    padding-top:250px;
+    text-align:center;
+    font-family: arial, Verdana;
+    font-size: 15px;
+}
+
+#ZanId {
+    margin:10px;
+}
+
+#StartFont {
+    margin-left:197px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div id="main">
+
+<div id="ChooseDiv">
+    <div class="title">删除多余模块(深色代表删除)</div>
+    <div id="ChooseSet">
+        <!--<span class="tag" title="ad">广告</span> !-->
+        <span class="tag" title="head">标头</span>
+        <span class="tag" title="note">提醒</span>
+        <span class="tag" title="come">最近来访</span>
+        <span class="tag" title="FriSe">好友推荐</span>
+        <span class="tag" title="LastY">过往的今天</span>
+        <span class="tag" title="topic">人人话题</span>
+        <span class="tag" title="music">音乐播放</span>
+        <span class="tag" title="left">左侧应用栏</span>
+        <span class="tag" title="search">搜索栏</span>
+        <span class="tag" title="logo">人人logo</span>
+        <span class="tag" title="comst">账号下拉框</span>
+        <span class="tag" title="selfmsg">个人信息</span>
+        <span class="tag" title="FriList">右下角好友列表</span>
+        <span class="tag" title="La1">导航1区</span>
+        <span class="tag" title="La2">导航2区</span>
+    </div>
+</div>
+
+<div id="KeyWord">
+    <div class="title">屏蔽关键字</div>
+    <input id="In"><button id="AddWord" class="btn">添加</button>
+    <br/>
+    <div id="WordSet"></div>
+    <br/>
+    <button id="open" class="btn">
+        开启
+    </button>
+    <button id="close" class="btn">
+        关闭
+    </button>
+</div>
+<div id="MoreUse">
+<div class="title">更多功能</div>
+<div id="UseSet">
+    <div class="UseSetTag" id="Zan" title="对被攻击者进行持续的惨无人道到循环点赞">点赞狂魔 id：<input id="ZanId"><button id="ZanAddName" class="btn">添加</button><div id="ZanNote">&nbsp;&nbsp;&nbsp;&nbsp;</div><button id="ZanBtn" class="btn">开始</button></div>
+</div>
+</div> <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><button id="ZanBtn" class="btn">开始</button>-->
+<div class="info">
+    <p><a class="weibo" href="http://weibo.com/antibay" target="_blank">Auther: antibay</a></p>
+</div>
+<script src="popup.js"></script>
+
+</div>
+</body>
+</html>
