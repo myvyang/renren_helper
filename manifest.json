@@ -18,5 +18,5 @@
    "name": "\u4eba\u4eba\u52a9\u624b",
    "permissions": [ "tabs", "storage", "http://www.renren.com/*", "http://*.renren.com/*" ],
    "web_accessible_resources": [ "font.css","fx.fon"],
-   "version": "0.5.4"
+   "version": "0.5.5"
 }
